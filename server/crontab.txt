@@ -1,0 +1,4 @@
+# m h  dom mon dow   command
+0 3 * * 1 /home/miguel/Praticas-DevOps-2026/utils/verif_email.sh /home/miguel/Praticas-DevOps-2026/utils/emails.txt >> /home/miguel/Praticas-DevOps-2026/logs/log_execucao.txt 2>&1
+0 2 * * * /home/miguel/Praticas-DevOps-2026/utils/processalog.sh /var/log/syslog
+0 0 * * * /home/miguel/Praticas-DevOps-2026/utils/analisalog.sh /var/log/syslog
