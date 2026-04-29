@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # ------------------------------------------------------------------------ #
-# Script Name:   comparar.sh
-# Description:   Compara dois números inteiros informados pelo usuário
+# Script Name:   compara_strings.sh
+# Description:   Verifica se duas strings são idênticas
 # Site:          https://github.com/Mikaziel
 # Written by:    Miguel Dias
 # Maintenance:   Miguel Dias
 # ------------------------------------------------------------------------ #
-# Usage:         $ ./comparar.sh
+# Usage:         $ ./compara_strings.sh
 # ------------------------------------------------------------------------ #
 # History:       v1.0 15/04/2026 - Miguel: Initial version
 # ------------------------------------------------------------------------ #
@@ -16,13 +16,13 @@
 # FUNCTIONS --------------------------------------------------------------- #
 
 # CODE -------------------------------------------------------------------- #
-read -p "Diga um valor: " n1
-read -p "Diga outro valor: " n2
+read -p "Diga uma string: " s1
+read -p "Diga outra string: " s2
 
-if [ $n1 -gt $n2 ]; then
-    echo "$n1 é maior que $n2"
+if [ "$s1" == "$s2" ]; then
+    echo "As strings são iguais!"
 else
-    echo "$n2 é maior que $n1"
+    echo "As strings são diferentes!"
 fi
 
 # END --------------------------------------------------------------------- #
